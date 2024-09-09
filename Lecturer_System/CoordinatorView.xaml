@@ -1,0 +1,36 @@
+﻿<Window x:Class="Lecturer_System.Coordinator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Program Coordinator" Height="450" Width="600">
+    <Grid>
+        <!-- Define the row and column structure -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <!-- Full height for DataGrid -->
+            <RowDefinition Height="Auto"/>
+            <!-- Row for Buttons -->
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock FontSize="18" Grid.Row="0" HorizontalAlignment="Center" Margin="10">Program Coordinator Dashboard</TextBlock>
+
+        <!-- DataGrid Section -->
+        <DataGrid Grid.Row="1" AutoGenerateColumns="False" Margin="10" HeadersVisibility="All" GridLinesVisibility="All" BorderThickness="1" BorderBrush="Black">
+            <!-- Define columns similar to an Excel spreadsheet -->
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Claim ID" Binding="{Binding ClaimID}" Width="*"/>
+                <DataGridTextColumn Header="Lecturer Name" Binding="{Binding LecturerName}" Width="*"/>
+                <DataGridTextColumn Header="Hours Worked" Binding="{Binding HoursWorked}" Width="*"/>
+                <DataGridTextColumn Header="Hourly Rate" Binding="{Binding HourlyRate}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Buttons Section -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Content="Verify Selected" Width="120" Height="30" Margin="10"/>
+            <Button Content="Approve Selected" Width="120" Height="30" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
