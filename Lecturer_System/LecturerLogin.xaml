@@ -3,7 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Lecturer Login" Height="300" Width="400">
     <Grid>
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="283*"/>
+            <ColumnDefinition Width="117*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Width="300" Grid.ColumnSpan="2" Margin="50,0,0,0">
             <!-- Title -->
             <TextBlock FontSize="18" HorizontalAlignment="Center" Margin="0 0 0 20">Lecturer Login</TextBlock>
 
