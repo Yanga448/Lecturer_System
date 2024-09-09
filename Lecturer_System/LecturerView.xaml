@@ -11,8 +11,8 @@
         <TextBlock Text="Total Amount:" VerticalAlignment="Top" Margin="10,100,0,0" />
         <TextBox Name="TotalAmount" Width="200" Margin="120,100,10,0" VerticalAlignment="Top" />
 
-        <Button Content="Upload Supporting Documents" Width="200" Margin="10,150,10,0" VerticalAlignment="Top" />
+        <Button Content="Upload Supporting Documents" Width="200" Margin="10,150,10,0" VerticalAlignment="Top" Background="#FF6BE40B" />
 
-        <Button Content="Submit Claim" Width="100" Height="30" Margin="150,200,0,0" VerticalAlignment="Top" />
+        <Button Content="Submit Claim" Width="100" Height="30" Margin="150,200,0,0" VerticalAlignment="Top" Background="#FF7ADA0C" />
     </Grid>
 </Window>

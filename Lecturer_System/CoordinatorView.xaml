@@ -29,8 +29,8 @@
 
         <!-- Buttons Section -->
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-            <Button Content="Verify Selected" Width="120" Height="30" Margin="10"/>
-            <Button Content="Approve Selected" Width="120" Height="30" Margin="10"/>
+            <Button Content="Verify Selected" Width="120" Height="30" Margin="10" Background="#FF6ED81A"/>
+            <Button Content="Approve Selected" Width="120" Height="30" Margin="10" Background="#FF70DE19"/>
         </StackPanel>
     </Grid>
 </Window>
